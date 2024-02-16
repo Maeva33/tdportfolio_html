@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Exercice 1 : Structure initiale -->
+<!-- Créez une nouvelle page HTML avec une structure de base.Nommez-la "portfolio.html".
+ Créer le squelette HTML
+Ajoutez une balise <meta charset="UTF-8"> pour garantir la bonne
+interprétation des caractères. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Exercice 2 : En-tête, navigation et structure sémantique -->
+<!-- Créez un <header> avec un <h1> pour votre nom et un <h2> avec votre métier -->
+<!-- Créez une <nav>, puis utilisez une liste non ordonnée pour créer des liens vers -->
+<!-- différentes sections de votre portfolio : Accueil, À propos, Projets, et Contact. -->
+<!-- Structurez votre page en utilisant des éléments sémantiques -->
+    <header>
+    <h1>Maëva RODRIGUES</h1>
+    <h2>Développeuse Fullstack</h2>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+<!-- Sémantique :  -->
+    <main>
+        <section id="accueil">
+            <h2>Accueil</h2>
+            <p>Bienvenue sur mon portfolio🌈</p>
+        </section>
+<!-- Exercice 3 : Section À propos
+Utilisez un élément <section> avec un identifiant "about".
+À l'intérieur, ajoutez une image de profil avec l'attribut alt approprié.
+Écrivez un ou deux paragraphes sur vous, votre formation, et votre passion pour le
+web. -->
+        <section id="about">
+            <h2>À propos</h2>
+            <img src="photoprofil.jpg" alt="Photo de profil"width=300px>
+            <p>Bienvenue sur mon portfolio. Je suis passionné par le web et j'ai une formation en développement web.</p>
+        </section>
+<!-- Exercice 4 : Section Projets
+Dans une nouvelle section, ajoutez un <h2> avec le titre "Projets".
+Pour chaque projet (au moins trois), utilisez l'élément <article>. Chaque article
+devrait avoir :
+○ Une image ou une capture d'écran (avec l'attribut alt).
+○ Un titre de projet avec <h3>.
+○ Une courte description dans un paragraphe.
+○ Si possible, un lien externe (utilisant l'attribut target="_blank") pour voir le
+projet ou la maquette en direct. -->
+        <section id="projects">
+            <h2>Projets</h2>
+            <article>
+                <img src="captureprojet.PNG" alt="Capture d'écran du projet 1"width=300px>
+                <h3>Projet 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur recusandae, ipsam quod error eveniet veritatis, ipsum assumenda sapiente at, minima maxime qui? Quibusdam possimus itaque odit quas corporis! Incidunt, perferendis.
+                Nulla reprehenderit et illum aliquid repellendus, atque mollitia officiis? Error quidem aperiam dolore. Eos vitae ipsa iure recusandae earum, incidunt, fuga iste soluta debitis cum beatae illum eveniet tenetur ab?
+                Magnam quibusdam sint dolorum exercitationem in reprehenderit impedit veritatis. Officiis odit eligendi quibusdam dolor quam, cumque voluptatum quis molestias! A fugiat labore fugit eveniet facilis impedit nostrum modi porro aut.</p>
+                <a href="lien_vers_projet_1" target="_blank">Voir le projet</a>
+            </article>
+            <article>
+                <img src="captureprojet.PNG" alt="Capture d'écran du projet 2"width=300px>
+                <h3>Projet 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur recusandae, ipsam quod error eveniet veritatis, ipsum assumenda sapiente at, minima maxime qui? Quibusdam possimus itaque odit quas corporis! Incidunt, perferendis.
+                Nulla reprehenderit et illum aliquid repellendus, atque mollitia officiis? Error quidem aperiam dolore. Eos vitae ipsa iure recusandae earum, incidunt, fuga iste soluta debitis cum beatae illum eveniet tenetur ab?
+                Magnam quibusdam sint dolorum exercitationem in reprehenderit impedit veritatis. Officiis odit eligendi quibusdam dolor quam, cumque voluptatum quis molestias! A fugiat labore fugit eveniet facilis impedit nostrum modi porro aut.</p>
+                <a href="lien_vers_projet_2" target="_blank">Voir le projet</a>
+            </article>
+            <article>
+                <img src="captureprojet.PNG" alt="Capture d'écran du projet 3"width=300px>
+                <h3>Projet 3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur recusandae, ipsam quod error eveniet veritatis, ipsum assumenda sapiente at, minima maxime qui? Quibusdam possimus itaque odit quas corporis! Incidunt, perferendis.
+                Nulla reprehenderit et illum aliquid repellendus, atque mollitia officiis? Error quidem aperiam dolore. Eos vitae ipsa iure recusandae earum, incidunt, fuga iste soluta debitis cum beatae illum eveniet tenetur ab?
+                Magnam quibusdam sint dolorum exercitationem in reprehenderit impedit veritatis. Officiis odit eligendi quibusdam dolor quam, cumque voluptatum quis molestias! A fugiat labore fugit eveniet facilis impedit nostrum modi porro aut.</p>
+                <a href="lien_vers_projet_3" target="_blank">Voir le projet</a>
+            </article>
+<!-- Exercice 5 : Section de contact
+Dans une nouvelle section, ajoutez un <h2> avec le titre "Contactez-moi"..
+Créez un formulaire avec les champs : Nom (text), Email (email), Sujet (text) et
+Message (textarea). Ajoutez également un bouton d'envoi. -->
+    <section id="Contactez-moi">
+    <h2>Contactez-moi</h2>
+    <form>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="sujet">Sujet :</label>
+        <input type="text" id="sujet" name="sujet" required><br>
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+<!-- Exercice 6 : Navigation par liens d'ancrage
+Modifiez les liens dans votre <nav> pour qu'ils utilisent la navigation par liens
+d'ancrage.
+Par exemple, le lien vers la section "À propos" doit pointer vers #about. -->
+<!-- <nav>
+    <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav> -->
+    
+<!-- Exercice 7 : Pied de page
+Ajoutez un <footer>.
+Intégrez des éléments de copyright en utilisant l'entité HTML &copy;
+Ajoutez des liens vers vos profils de réseaux sociaux : LinkedIn, GitHub, etc. -->
+<footer>
+    <p>Copyright &copy; 2024 <NAME></p>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/maevarodrigues/">LinkedIn</a></li>
+        <li><a href="https://github.com/Maeva33">GitHub</a></li>
+    </ul>
+</footer>
+<!-- Exercice 8 : Intégration d'une carte
+Utilisez une iframe pour intégrer une carte Google Maps montrant la localisation
+d'une école ou d'une entreprise de design de votre choix. -->
+<section id="map">
+    <h2>Localisation</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5658.813684954271!2d-0.6405337242347103!3d44.83364737528939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d834933a6e51%3A0x46d1dbe8ab690d9f!2s208%20Av.%20de%20la%20Marne%2C%2033700%20M%C3%A9rignac!5e0!3m2!1sfr!2sfr!4v1708096997701!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+</body>
+</html>
